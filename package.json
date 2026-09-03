@@ -4,6 +4,7 @@
   "private": true,
   "description": "Mobile-first number puzzle for Android",
   "scripts": {
+    "validate:stages": "node tools/validate-stages.mjs",
     "android:add": "npx cap add android",
     "android:sync": "npx cap sync android",
     "android:open": "npx cap open android",
