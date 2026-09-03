@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Validate puzzle stages
+        run: npm run validate:stages
+
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
