@@ -1,18 +1,23 @@
 {
   "name": "number-puzzle",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Mobile-first number puzzle for Android",
   "scripts": {
     "android:add": "npx cap add android",
     "android:sync": "npx cap sync android",
-    "android:open": "npx cap open android"
+    "android:open": "npx cap open android",
+    "android:bundle:debug": "cd android && ./gradlew bundleDebug",
+    "android:apk:debug": "cd android && ./gradlew assembleDebug"
   },
   "dependencies": {
-    "@capacitor/android": "^7.4.3",
-    "@capacitor/core": "^7.4.3"
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0"
   },
   "devDependencies": {
-    "@capacitor/cli": "^7.4.3"
+    "@capacitor/cli": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
