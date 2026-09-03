@@ -1,6 +1,6 @@
 const SIZE=5;
 const stages=[
-{target:8,maxMerges:2,tiles:[[2,2],[2,3],[3,2],[3,3]]},
+{target:8,maxMerges:3,tiles:[[2,2],[2,3],[3,2],[3,3]]},
 {target:16,maxMerges:3,tiles:[[1,1,4],[1,3,4],[3,1,4],[3,3,4]]},
 {target:16,maxMerges:3,tiles:[[0,0,2],[0,4,2],[2,1,4],[2,3,4],[4,2,8]]},
 {target:32,maxMerges:4,tiles:[[0,1,4],[0,3,4],[2,0,8],[2,4,8],[4,1,8],[4,3,8]]},
