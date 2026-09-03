@@ -2,46 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
-  <meta name="theme-color" content="#171717" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="refresh" content="0; url=./www/" />
+  <link rel="canonical" href="./www/" />
   <title>Number Puzzle</title>
-  <link rel="stylesheet" href="styles.css" />
+  <script>location.replace('./www/');</script>
 </head>
 <body>
-  <main class="app">
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">NUMBER PUZZLE</p>
-        <h1>Make the target.</h1>
-      </div>
-      <button id="restartBtn" class="icon-btn" aria-label="リスタート">↻</button>
-    </header>
-
-    <section class="status-card">
-      <div><span class="label">STAGE</span><strong id="stageLabel">1 / 5</strong></div>
-      <div><span class="label">TARGET</span><strong id="targetLabel">8</strong></div>
-      <div><span class="label">MERGES</span><strong id="mergeLabel">0 / 2</strong></div>
-    </section>
-
-    <section class="game-wrap">
-      <div id="board" class="board" aria-label="パズル盤面"></div>
-      <p class="hint">上下左右にスワイプ。<br />同じ数字がぶつかると合体します。</p>
-    </section>
-
-    <section class="controls" aria-label="方向キー">
-      <button data-dir="up">↑</button>
-      <div><button data-dir="left">←</button><button data-dir="down">↓</button><button data-dir="right">→</button></div>
-    </section>
-
-    <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
-      <div class="modal">
-        <p id="modalKicker" class="eyebrow">CLEAR</p>
-        <h2 id="modalTitle">Nice.</h2>
-        <p id="modalText">ターゲットを作りました。</p>
-        <button id="nextBtn" class="primary-btn">次のステージ</button>
-      </div>
-    </div>
-  </main>
-  <script src="game.js"></script>
+  <p><a href="./www/">Number Puzzle を開く</a></p>
 </body>
 </html>
