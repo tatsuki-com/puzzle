@@ -16,9 +16,10 @@
     <section class="status-card">
       <div><span class="label">STAGE</span><strong id="stageLabel">1 / 5</strong></div>
       <div><span class="label">TARGET</span><strong id="targetLabel">8</strong></div>
-      <div><span class="label">MERGES</span><strong id="mergeLabel">0 / 2</strong></div>
+      <div><span class="label">MERGES</span><strong id="mergeLabel">0 / 3</strong></div>
     </section>
     <section class="game-wrap"><div id="board" class="board" aria-label="パズル盤面"></div><p class="hint">上下左右にスワイプ。<br />同じ数字がぶつかると合体します。</p></section>
+    <section class="action-row"><button id="undoBtn" class="secondary-btn">↶ UNDO</button><button id="hintBtn" class="secondary-btn">✦ HINT</button></section>
     <section class="controls" aria-label="方向キー"><button data-dir="up">↑</button><div><button data-dir="left">←</button><button data-dir="down">↓</button><button data-dir="right">→</button></div></section>
     <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true"><div class="modal"><p id="modalKicker" class="eyebrow">CLEAR</p><h2 id="modalTitle">Nice.</h2><p id="modalText">ターゲットを作りました。</p><button id="nextBtn" class="primary-btn">次のステージ</button></div></div>
   </main>
