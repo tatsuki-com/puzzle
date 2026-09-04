@@ -9,21 +9,15 @@
 </head>
 <body>
   <main class="app">
-    <header class="topbar">
-      <div><p class="eyebrow">NUMBER PUZZLE</p><h1>Make the target.</h1></div>
-      <div class="top-actions"><button id="levelsBtn" class="icon-btn" aria-label="ステージ選択">☷</button><button id="restartBtn" class="icon-btn" aria-label="リスタート">↻</button></div>
-    </header>
-    <section class="status-card">
-      <div><span class="label">STAGE</span><strong id="stageLabel">1 / 5</strong></div>
-      <div><span class="label">TARGET</span><strong id="targetLabel">8</strong></div>
-      <div><span class="label">MERGES</span><strong id="mergeLabel">0 / 3</strong></div>
-    </section>
+    <header class="topbar"><div><p class="eyebrow">NUMBER PUZZLE</p><h1>Make the target.</h1></div><div class="top-actions"><button id="levelsBtn" class="icon-btn" aria-label="ステージ選択">☷</button><button id="restartBtn" class="icon-btn" aria-label="リスタート">↻</button></div></header>
+    <section class="status-card"><div><span class="label">STAGE</span><strong id="stageLabel">1 / 30</strong></div><div><span class="label">TARGET</span><strong id="targetLabel">8</strong></div><div><span class="label">MERGES</span><strong id="mergeLabel">0 / 3</strong></div></section>
     <section class="game-wrap"><div id="board" class="board" aria-label="パズル盤面"></div><p class="hint">上下左右にスワイプ。<br />同じ数字がぶつかると合体します。</p></section>
     <section class="action-row"><button id="undoBtn" class="secondary-btn">↶ UNDO</button><button id="hintBtn" class="secondary-btn">✦ HINT</button></section>
     <section class="controls" aria-label="方向キー"><button data-dir="up">↑</button><div><button data-dir="left">←</button><button data-dir="down">↓</button><button data-dir="right">→</button></div></section>
     <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true"><div class="modal"><p id="modalKicker" class="eyebrow">CLEAR</p><h2 id="modalTitle">Nice.</h2><div id="modalStars" class="modal-stars"></div><p id="modalText">ターゲットを作りました。</p><button id="nextBtn" class="primary-btn">次のステージ</button></div></div>
     <div id="levelsOverlay" class="overlay hidden" role="dialog" aria-modal="true"><div class="modal level-modal"><div class="level-head"><div><p class="eyebrow">STAGES</p><h2>Select.</h2></div><button id="closeLevelsBtn" class="icon-btn" aria-label="閉じる">×</button></div><p class="level-summary" id="levelSummary"></p><div id="levelGrid" class="level-grid"></div></div></div>
   </main>
+  <script src="stages.js"></script>
   <script src="game.js"></script>
 </body>
 </html>
